@@ -1,0 +1,172 @@
+Total filas: 40455
+Imágenes únicas: 8091
+
+--- Captions por imagen ---
+count    8091.0
+mean        5.0
+std         0.0
+min         5.0
+25%         5.0
+50%         5.0
+75%         5.0
+max         5.0
+dtype: float64
+
+--- Longitud captions (palabras) ---
+count    40455.000000
+mean        10.816982
+std          3.769411
+min          1.000000
+25%          8.000000
+50%         10.000000
+75%         13.000000
+max         37.000000
+Name: num_words, dtype: float64
+
+--- Longitud captions (caracteres) ---
+count    40455.000000
+mean        55.134297
+std         18.839396
+min          1.000000
+25%         41.000000
+50%         53.000000
+75%         66.000000
+max        199.000000
+Name: num_chars, dtype: float64
+
+--- VOCABULARIO ---
+Tamaño vocabulario: 8778
+Top 20 palabras: [('a', 62986), ('in', 18974), ('the', 18418), ('on', 10743), ('is', 9345), ('and', 8851), ('dog', 8136), ('with', 7765), ('man', 7265), ('of', 6713), ('two', 5638), ('white', 3940), ('black', 3832), ('boy', 3581), ('are', 3504), ('woman', 3402), ('girl', 3328), ('to', 3173), ('wearing', 3062), ('at', 2914)]
+
+--- TOP KEYWORDS AUTOMÁTICAS ---
+['dog', 'man', 'two', 'white', 'black', 'boy', 'woman', 'girl', 'wearing', 'people', 'water', 'red', 'young', 'brown', 'blue', 'dogs', 'running', 'through', 'playing', 'shirt', 'standing', 'ball', 'little', 'grass', 'child', 'person', 'snow', 'jumping', 'front', 'three']
+
+--- FRECUENCIA DE KEYWORDS (por caption) ---
+dog: 7439
+man: 7007
+two: 5559
+white: 3778
+black: 3688
+boy: 3477
+woman: 3331
+girl: 3222
+wearing: 2999
+people: 2862
+water: 2736
+red: 2584
+young: 2579
+brown: 2483
+blue: 2183
+dogs: 2113
+running: 2060
+through: 2028
+playing: 2003
+shirt: 1738
+standing: 1783
+ball: 1773
+little: 1714
+grass: 1620
+child: 1510
+person: 1521
+snow: 1472
+jumping: 1470
+front: 1375
+three: 1379
+
+--- Nº DE CATEGORÍAS POR CAPTION ---
+count    40455.000000
+mean         2.014238
+std          1.324886
+min          0.000000
+25%          1.000000
+50%          2.000000
+75%          3.000000
+max          9.000000
+Name: num_categories, dtype: float64
+
+--- DISTRIBUCIÓN Nº CATEGORÍAS ---
+0 categorías: 4117 captions
+1 categorías: 11882 captions
+2 categorías: 11603 captions
+3 categorías: 7448 captions
+4 categorías: 3559 captions
+5 categorías: 1368 captions
+6 categorías: 381 captions
+7 categorías: 88 captions
+8 categorías: 5 captions
+9 categorías: 4 captions
+
+--- EJEMPLOS CON MUCHAS CATEGORÍAS ---
+                                              caption  num_categories
+6   A black dog and a tri-colored dog playing with...               3
+7   A black dog and a white dog with brown spots a...               4
+10  A little girl covered in paint sits in front o...               3
+11  A little girl is sitting in front of a large p...               3
+12  A small girl in the grass plays with fingerpai...               4
+14  Young girl with pigtails painting outside in t...               3
+16  A man lays on the bench to which a white dog i...               3
+17  a man sleeping on a bench outside with a white...               4
+26             A little girl climbing on red roping .               3
+30  A black and white dog is running in a grassy g...               4
+
+--- EJEMPLOS CON POCAS CATEGORÍAS ---
+                                              caption  num_categories
+0   A child in a pink dress is climbing up a set o...               1
+1               A girl going into a wooden building .               1
+20     A man in an orange hat starring at something .               1
+21            A man wears an orange hat and glasses .               1
+46         A grey dog is leaping over a fallen tree .               1
+58  A skier looks at framed pictures in the snow n...               1
+60         A collage of one person climbing a cliff .               1
+61  A group of people are rock climbing on a rock ...               1
+63  Seven climbers are ascending a rock face whils...               1
+70  A dog prepares to catch a thrown object in a f...               1
+
+--- DISTRIBUCIÓN POR CATEGORÍAS (MANUAL)---
+animals: 10058
+people: 24314
+sports: 5041
+water: 6695
+vehicles: 2284
+actions: 9373
+
+--- DISTRIBUCIÓN Nº CATEGORÍAS POR CAPTION (MANUAL)---
+0 categorías: 4533 captions
+1 categorías: 19170 captions
+2 categorías: 12075 captions
+3 categorías: 4276 captions
+4 categorías: 388 captions
+5 categorías: 13 captions
+
+--- INTEGRIDAD DATOS ---
+Imágenes sin caption: 0
+Captions sin imagen: 0
+
+Captions duplicados: 10
+
+--- CAPTIONS EXTREMOS ---
+Muy cortos (<3 palabras): 27
+Muy largos (>25 palabras): 85
+
+--- DIVERSIDAD CAPTIONS POR IMAGEN ---
+count    8091.000000
+mean        4.998764
+std         0.035136
+min         4.000000
+25%         5.000000
+50%         5.000000
+75%         5.000000
+max         5.000000
+Name: caption, dtype: float64
+
+Top 10 bigramas: [(('in', 'a'), 6472), (('on', 'a'), 5221), (('in', 'the'), 5055), (('a', 'man'), 5054), (('with', 'a'), 3300), (('on', 'the'), 2484), (('of', 'a'), 2389), (('a', 'woman'), 2193), (('a', 'black'), 1994), (('a', 'dog'), 1990)]
+
+Cobertura top 100 palabras: 0.6814258671030257
+
+--- EJEMPLOS ---
+                           image                                            caption  num_words  num_chars  num_categories
+6576   2249141510_f534708374.jpg              A boy in red jumping into a sandbox .          8         37               2
+24844  3301822808_f2ccff86f4.jpg  a young girl wearing a colorful outfit dancing...         14         81               1
+4909   2092419948_eea8001d0f.jpg  The man with long hair is walking along a stor...         11         55               1
+13361  2695093520_5cfeb0729d.jpg  A couple stands in the street with their backs...         13         66               0
+5179    211295363_49010ca38d.jpg  There is a white boat in the bay with a city i...         14         64               1

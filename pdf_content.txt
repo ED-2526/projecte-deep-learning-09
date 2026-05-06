@@ -1,0 +1,574 @@
+Neural Networks 
+and Deep Learning
+Group Projects
+Ramon Baldrich (ramon.baldrich@uab.cat)
+Credit to Dimos Karatazas & Carlos Boned
+Contents
+• Project Objectives
+• Selecting a project
+– What is a good topic
+– Project Topics
+– Procedure to select a topic
+• A successful project
+– What you are supposed to do
+– What you are supposed to deliver
+• Project Timeline
+– Milestones
+– Calendar planning
+• Evaluation
+2
+Course Structure
+Project
+Theory
+Problems
+Learn a set of useful 
+techniques and 
+algorithms
+Put into practice some 
+of the algorithms seen
+Learn the tools and deepen 
+theoretical knowledge
+Computer 
+Science
+Mathematics 
+and Statistics
+Deep 
+Learning
+Lab sessions
+3
+PROJECT OBJECTIVES
+4
+Project Objectives
+• Put in practice everything you have learnt up to now, in an open-end 
+exercise
+• Manage data – find, clean, prepare data as required
+• Understand the code and solutions of others, even if provided in a 
+different deep learning framework
+• Understand the pros and cons of all the different architectures we have 
+seen in class – apply the most appropriate deep learning architecture to a 
+particular problem
+• Learn how to set-up a deep learning project on a cloud environment, 
+how to debug it remotely, and how to collaborate in code writing
+• Make effective use of bibliographical resources and electronic resources 
+to obtain information
+• Using criteria of quality, critically evaluate the work carried out
+• Work cooperatively,  taking on responsibility and respecting the role of 
+the distinct members in the team
+5
+SELECTING A PROJECT
+What is a good topic, proposed topics
+6
+What is a good topic?
+(why we selected the ones we did)
+• Can it be solved with the architectures and techniques we have seen during the 
+course?
+– CNN, RNN, Contrastive Learning (, Attention)
+• Is it the right complexity?
+– We want to do end-to-end training (avoid using tabular data of pre-extracted features)
+– Requires more than sklearn and classical ML methods
+– It is not too complex (we only have 5 weeks)
+• Is it the right size, model wise?
+– The kind of model you need should be moderate size: fits in GPU memory, reasonable number 
+of trainable parameters (you can train it in a few hours)
+– Don’t try to train a huge model from scratch, build on the shoulders of giants and finetune
+– Even pre-trained models might be too big for your GPU memory
+– Should be small enough (modular enough) to be understandable
+• Is it the right size, data wise?
+– You need to have enough (annotated) data for training. If data is not already available, it’s not 
+a good project (you have no time to prepare data from scratch)
+– You have no resources to train with the whole internet, not even with the whole MS-Coco 
+dataset…
+– Your data should fit in local disk space (for fast access during training): max 10-20 GB
+7
+What Tasks do we want to make you 
+solve?
+8
+• Image Classification
+• Finegrade Image Classification
+• Image Segmentation
+• Image Captioning
+• Image Retrieval
+• Speech to Text
+• OCR, HTR and so on ( Optical Character Recognition )
+• ….
+Starting points at: 
+ https://github.com/Bycarkos/Starting-Points/tree/main
+Objective:
+• Classify dogs into 120 possible breeds
+Type of Model:
+• CNN
+Task:
+• Fine-grained Image Classification
+Data:
+• ~10,000 images of dogs (750 MB)
+• https://www.kaggle.com/competitio
+ns/dog-breed-identification/data 
+Starting point:
+• yes
+Project 1: Dog breed classification
+9
+Objective:
+• Detect Invasive Ductal Carcinoma 
+(IDC) on whole mount slide images 
+and segment the sections where the 
+tumor is.
+Type of Model:
+• CNN
+Task:
+• Binary Image Classification at mask 
+level
+Data:
+• BraTS2020 Dataset (Training + 
+Validation)
+Starting point:
+• Not yet
+Project 2: Semantic Segmentation with 
+tumors
+10
+
+Project 3: Semantic Segmentation with 
+natural Images
+11
+Objective:
+• General semantic segmentation.
+Type of Model:
+• CNN
+Task:
+• Binary Image Classification at mask level
+Data:
+• 256 x 256 images
+• COCO dataset 
+Starting point:
+• Not yet
+
+Objective:
+• Classify Style/Author
+Type of Model:
+• CNN
+Task:
+• Image classification
+Data:
+• WikiArt
+Starting point:
+• Not specifically (can use the dog 
+classification problem)
+Project 4: WikiArt Image Classification
+12
+
+Objective:
+• Automatically add colour on greyscale 
+images
+• It can be extended to video. 
+(Upgrade)
+Type of Model:
+• CNN Encoder-Decoder
+Task:
+• Image Reconstruction
+Data:
+• Internet !!
+Starting point:
+• Not yet
+Project : Self-Supervised Colouring 
+grayscale photos
+13
+Objective:
+• Estimate when the Paint has been 
+painted
+Type of Model:
+• CNN
+Task:
+• Regression
+Data:
+• WikiArt
+Starting point:
+• Not specifically (can use the dog 
+classification problem changing the 
+loss)
+Project 6: WikiArt Data Estimation
+14
+
+Project 7: Fake News Detection
+15
+Objective:
+• Work with NLP and do text classification
+Type of Model:
+• RNN, Transformer
+Task:
+• Text classification
+Data:
+• ISOT Dataset (pretty easy)
+• Also Another Dataset (WEIBO)
+Starting point:
+• Not yet
+
+Project 8: Optical Character 
+Recognition 
+16
+Objective:
+• Recognize text from an Image (word or line level)
+Type of Model:
+• CNN, CNN+RNN, Transformer
+Task:
+• OCR, HTR, ...
+Data:
+• IAM Dataset (pretty easy)
+• Esposalles (pretty easy)
+• There is a lot of them
+(Ask for other datasets)
+Starting point:
+• Not yet (similar to 10)
+
+Project 9: Music Genre Classification
+17
+Objective:
+• Classify music in 163 genres, either based on 
+pre-extracted features, or by analysing tracks 
+from mp3 samples
+Type of Model:
+• RNN or CNN
+Task:
+• Audio Classification
+Data:
+• Predefined Datasets  or Create your own !!
+Starting point:
+• yes
+
+Project 10: Molecule Recognition
+18
+Objective:
+• Recognize and transcribe a molecule from an 
+Image
+Type of Model:
+• CNN + RNN
+Task:
+• Image to text
+Data:
+• USPTO-30K
+Starting point:
+• yes
+
+Project 11: Business classification
+19
+Objective:
+• Classify businesses on street view images, combining textual and visual features
+Type of Model:
+• Transformer (CNN and Word Embeddings)
+Task:
+• Fine-grained Classification
+Data:
+• 25,255 images from ImageNet of 28 categories (do not reuse the old OCR)
+• https://staff.fnwi.uva.nl/s.karaoglu/datasetWeb/Dataset.html 
+Starting point:
+• https://github.com/lluisgomez/ConTextTransformer
+
+Project 12: Image Captioning
+20
+Objective:
+• Generate natural language descriptions for images
+Type of Model:
+• CNN and RNN
+Task:
+• Image Captioning
+Data:
+• 8,000 images with 5 captions each (1 GB)
+• https://www.kaggle.com/datasets/adityajn105/flickr8k
+• Meal captioning
+Starting point:
+• https://github.com/angeligareta/image-captioning
+A Tonkatsu dish
+consists of a large
+piece of breaded
+pork chops, 
+shredded into some
+thick shreds, drizzled
+with tomato sauce, 
+and served with a 
+cabbage salad.
+Project 13: Comics Image Retrieval
+21
+Objective:
+• Retrieve most probable panel from a given text
+Type of Model:
+• CNN and NLP
+Task:
+• Cross Modal Image Retrieval
+Data:
+• Comics
+Starting point:
+• yes
+ This panel from a golden age American comic book 
+depicts a lively urban scene with a vintage police car 
+as the central focus. The car, painted in a classic 
+green and white color scheme, is shown in motion, 
+kicking up dust as it speeds down the street. Inside 
+the police car are two officers, both wearing blue 
+uniforms and hats. They appear to be engaged in a 
+conversation, their expressions suggesting a sense of 
+urgency or determination.
+Project 14: Catalan Speech to Text
+22
+Objective:
+• Transcribe a speech to text
+Type of Model:
+• CNN + RNN Encoder-Decoder
+Task:
+• Speech to text 
+Data:
+• Catalan Datasets
+Starting point:
+• yes
+Bam-bam-bam
+Bambi, bam-bam
+Bambi, bambi, bam-bam-bam
+Bambi, bam-bam
+Bambi, bambi, bam
+Un àngel i un dimoni
+Parlant-me pel walkie
+Pel walkie-talkie
+Pel walkie-talkie
+No hi ha ningú a dins meu
+No hi ha ningú que em salvi
+Soc com en Bambi, eh!
+Com en Bambi
+Eh, eh, soc com en Bambi
+Jo soc en Bambi
+Millor que en Bambi
+Ei, ei, come on Bambi, come on
+
+Can I propose my own project?
+• If you really want to, 
+come and see me with a proposal:
+– What is the problem?
+– On which data?
+– What is your starting point?
+23
+Select your project by Thursday!
+24
+• You must provide your top-3 preferred options
+• Please if you propose your own projects, send me an email to 
+discuss its admission
+• We will limit the maximum number of teams per project (2)
+• A single response per group
+• If you do not respond by Thursday 23, we will assign you to a 
+random project
+Fill in the selection form <link>
+
+A SUCCESSFUL PROJECT
+What are you supposed to do?
+What are you supposed to deliver?
+25
+Generic Tasks
+• Create a GitHub for your group
+– Through GitHub classroom – instructions to follow
+• Create a Wandb account
+– It will help to track experminents
+• Get the data
+– Write the corresponding Datasets and Dataloaders
+• Understand the starting point
+– Read the starting point code, articles, blogs, …
+– Be able to describe the baseline model in detail
+• Reproduce in PyTorch and train the baseline model 26
+Specific Tasks
+• Improve the baseline model
+– Change the model
+– Train with more data
+– Do augmentations
+• Understand your model
+– Test on out-of-distribution data / on your own data
+– Do quantitative and qualitative analysis
+– Visualise activation maps / attentions
+• Finetune your model for a different domain
+– Train on different data from a different domain
+27
+Sessions dues
+Except the first session you should provide a set of clear 
+questions you want to answer for the next one
+Ex:
+– Is the amount of data relevant?
+– On each process, does the system overfit?
+– Does “that” specific process help on increasing performance?
+– Is there an specific kind of inputs where the system fails more? 
+(ie: how big is the bias)
+– Which is the impact of the model size?
+– Does “X modification” on the model solve “Y” problem 
+detected?
+– …..
+– …..
+On every question you should provide the evidences to 
+answer it (table, figures, images, …).
+28
+Expectations
+29
+• Reach high performance
+• Try many different models
+• Try different ways of training
+• Apply on different data
+• Thoroughly evaluate
+• Reach reasonable performance
+• Try minor changes in the model
+• Apply on different data
+• Thoroughly evaluate
+• Successfully complete the training of 
+one model
+• Reduce the dataset as needed to be 
+able to demonstrate proof of concept
+• Demonstrate that the model learns 
+as expected (e.g. does not overfit)
+• Thoroughly evaluate
+• Successfully complete the training of 
+one model
+• Performance is irrelevant, but…
+• Demonstrate that the model learns 
+as expected
+• Thoroughly evaluate
+Deliverables
+• GitHub Repo
+– Reproducible code
+– Full documentation
+• Instructions on how to execute it
+– External links to all data you used
+– Requirements 
+• (export the conda environment you used -> .yml)
+• Presentation
+• Final report
+30
+• We will use GitHub to promote cooperation and best 
+practices
+• Continuity of commits, presentation, clarity, attractiveness, 
+completeness, will be valued...
+• Good code (notebooks, or just .py files), self-explained 
+Markdown, links to the datasets used
+• Note: The UAB offers access to GitHub Education: 
+https://blogs.uab.cat/ticuab/2020/12/13/github-education-a-
+labast-de-tots-els-uabers/ 
+• Note: As a UAB student you can get access to GitHub Pro, and 
+a Student Developer Pack: 
+https://education.github.com/discount_requests/student_ap
+plication 
+31
+
+PROJECT TIMELINE
+32
+Project Planning
+33
+By Thursday, 23th you should choose a project. Maximum 2 groups on the same project. In 
+case of conflict, the sum of exam grade of group members  prioritizes.
+Each group will come weekly 1 single hour to follow-up sessions
+ Dx 17:00-18:00
+ Dx 18:00-19:00
+ Dv 15:00-16:00
+ Dv 16:00-17:00
+
+EVALUATION
+34
+Deliverables
+You should write your own code, comment it, and package it with all dependencies needed 
+to replicate your solution. The structure of your repo should be clear and easy to navigate.
+Your GitHub should contain all the documentation 
+one needs to reproduce the project. Describe clearly 
+what is your objective, where to get the data, what 
+dependencies or requirements your code has, how to 
+reproduce what you did, what results you obtained, 
+and a critical appraisal of the results. Add jupyter 
+notebooks if needed.
+Project 
+Grade
+Deliverables Presentation
+0.40.5
+Autoevaluation
+GitHub Code GitHub 
+Documentation
+0.1 + 0.1 + 0.3
+Week 2
+Week 1 Week 3
+Presentation 
+pdf
+Report 
+pdf
+Week 0
+0.1
+Code Grading (indicative)
+36
+Evaluable Aspects
+To make the code run and train 
+baseline model, update paths to 
+data, etc. 
+(mandatory: if code does not run 
+final grade between 0 to 4)
+2-3 2-4 3-5 4-6
+Reach high performance + 1-2 + 2-3 + 2-3 + 3-4
+Try different models + 1-2 + 2-4 + 2-3 + 2-4
+Try different ways of training 
+(optimization function, learning rate 
+scheduling, regularization, etc)
++ 1-2 + 1-2 + 1-2 + 1-2
+Apply on different data + 1-2 + 1-2 + 2-3 + 2-3
+Thorough qualitative and 
+quantitative evaluation + 1-2 + 1-2 + 2-3 + 2-3
+Deliverables
+All projects will be 
+presented in class. All 
+members of the team 
+should participate actively 
+in the presentation. 
+Presentations will be open 
+to all the teams. Whose 
+interaction will be graded
+Project 
+Grade
+Deliverables Presentation
+0.40.5
+Autoevaluation
+GitHub Code GitHub 
+Documentation
+0.1 + 0.1 + 0.3
+Week 2
+Week 1 Week 3
+Presentation 
+pdf
+Report 
+pdf
+Week 0
+0.1
+Deliverables
+According to what team 
+members report and your 
+own explanation of the 
+work done you will get a 
+grade between 0 and 1 
+(there will be at minimum 
+one member with 1).
+Project 
+Grade
+Deliverables Presentation
+0.40.5
+Autoevaluation
+GitHub Code GitHub 
+Documentation
+0.1 + 0.1 + 0.3
+Week 2
+Week 1 Week 3
+Presentation 
+pdf
+Report 
+pdf
+Week 0
+0.1
+This grading can exclude a member from the group
+Presentation Grading
+39
+Evaluable Aspects
+Content
+- Objective
+- Data
+- Architecture(s) used
+- Training process
+- Results and Analysis
+- Conclusions
+Design
+Presentation skills (and participation of team members)*
+Explanations and Q+A
+Respecting the time
+individual
+individual
+* Includes questions to other teams
