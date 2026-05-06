@@ -1,0 +1,15 @@
+# Requirements for the active PyTorch image-captioning experiment line.
+# The original imported TensorFlow/Keras notebook may need a separate environment.
+
+torch
+torchvision
+transformers
+tokenizers
+wandb
+nltk
+Pillow
+scikit-learn
+tqdm
+matplotlib
+numpy
+jupyter
